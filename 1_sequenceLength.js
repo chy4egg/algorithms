@@ -26,7 +26,6 @@ const sequenceLength = (arr) => {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > 0) {
       current += 1
-      // last element check (tricky!)
       if (arr[i + 1] === undefined && current > max) {
         max = current;
       }
